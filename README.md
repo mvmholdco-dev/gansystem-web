@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000.
+Open https://gansystem-web.vercel.app/
 
 ## Content and assets
 
