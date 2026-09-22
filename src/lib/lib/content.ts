@@ -79,7 +79,7 @@ export const team: TeamMember[] = [
     shortRole: "CEO",
     responsibility:
       "Business leadership, strategy, partnerships, and overall company direction.",
-    photo: "/screenshots/maxwell.png",
+    photo: "https://media.licdn.com/dms/image/v2/D4E03AQEj2h_FcUCx6g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718899790299?e=1791417600&v=beta&t=j3Me_3GQB6wnAhEMOpimpa86CgpJE4w5CmQswZSWu48",
     linkedin: "https://www.linkedin.com/in/maxwell-onah-327335290",
     coFounder: true,
   },
