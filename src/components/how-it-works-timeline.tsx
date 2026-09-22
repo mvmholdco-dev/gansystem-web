@@ -48,13 +48,13 @@ export function HowItWorksTimeline() {
                 />
               )}
  
-              <span className="relative z-10 flex h-[3.3rem] w-[3.3rem] shrink-0 items-center justify-center border border-line-strong bg-ink-950 text-leaf-400 transition duration-300 group-hover:border-leaf-500/60 group-hover:bg-leaf-500/10">
+              <span className="relative z-10 flex h-[3.3rem] w-[3.3rem] shrink-0 items-center justify-center border border-line-strong bg-ocean-950 text-aqua-400 transition duration-300 group-hover:border-aqua-500/60 group-hover:bg-aqua-500/10">
                 <Icon className="h-6 w-6" />
               </span>
  
-              <div className="relative flex-1 overflow-hidden border border-line bg-ink-900/40 p-6 transition duration-300 group-hover:-translate-y-1 group-hover:border-leaf-500/40 group-hover:bg-ink-900/70 lg:mt-6 lg:flex-none lg:grow">
+              <div className="relative flex-1 overflow-hidden border border-line bg-ocean-900/40 p-6 transition duration-300 group-hover:-translate-y-1 group-hover:border-aqua-500/40 group-hover:bg-ocean-900/70 lg:mt-6 lg:flex-none lg:grow">
                 <div className="flex items-baseline gap-2">
-                  <span className="font-mono text-xs text-leaf-400">
+                  <span className="font-mono text-xs text-aqua-400">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <span aria-hidden="true" className="text-xs text-fog">

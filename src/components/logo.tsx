@@ -7,13 +7,13 @@ export function Logo({ compact = false }: { compact?: boolean }) {
       className="group inline-flex items-center gap-3"
       aria-label="Gansystem Limited — home"
     >
-      <span className="relative grid h-9 w-9 place-items-center rounded-md bg-gradient-to-br from-leaf-500/25 to-tide-500/20 ring-1 ring-leaf-500/30">
+      <span className="relative grid h-9 w-9 place-items-center rounded-md bg-gradient-to-br from-aqua-500/25 to-ocean-900/20 ring-1 ring-aqua-500/30">
         <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
           <path
             d="M3 16c2.2 0 2.2-2 4.4-2s2.2 2 4.4 2 2.2-2 4.4-2 2.2 2 4.4 2"
             fill="none"
             stroke="currentColor"
-            className="text-tide-400"
+            className="text-ocean-900"
             strokeWidth="1.6"
             strokeLinecap="round"
           />
@@ -21,7 +21,7 @@ export function Logo({ compact = false }: { compact?: boolean }) {
             d="M12 3.5c2.7 2 4.1 4 4.1 6a4.1 4.1 0 1 1-8.2 0c0-2 1.4-4 4.1-6Z"
             fill="none"
             stroke="currentColor"
-            className="text-leaf-500"
+            className="text-aqua-500"
             strokeWidth="1.6"
             strokeLinejoin="round"
           />

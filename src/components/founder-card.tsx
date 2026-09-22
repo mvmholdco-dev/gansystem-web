@@ -10,8 +10,8 @@ export function FounderCard({
   variant?: "compact" | "detailed";
 }) {
   return (
-    <article className="group flex h-full flex-col overflow-hidden border border-line bg-white/[0.02] transition duration-300 hover:border-leaf-500/35 hover:bg-white/[0.04]">
-      <div className="relative aspect-[4/3] overflow-hidden bg-ink-850">
+    <article className="group flex h-full flex-col overflow-hidden border border-line bg-white/[0.02] transition duration-300 hover:border-aqua-500/35 hover:bg-white/[0.04]">
+      <div className="relative aspect-[4/3] overflow-hidden bg-ocean-800">
         <Image
           src={founder.photo}
           alt={`Portrait of ${founder.name}`}
@@ -21,9 +21,9 @@ export function FounderCard({
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-t from-ink-950/85 via-ink-950/10 to-transparent"
+          className="absolute inset-0 bg-gradient-to-t from-ocean-950/85 via-ocean-950/10 to-transparent"
         />
-        <span className="absolute bottom-3 left-4 rounded-sm bg-ink-950/70 px-2.5 py-1 text-[0.65rem] font-medium uppercase tracking-[0.2em] text-leaf-400 ring-1 ring-leaf-500/25">
+        <span className="absolute bottom-3 left-4 rounded-sm bg-ocean-950/70 px-2.5 py-1 text-[0.65rem] font-medium uppercase tracking-[0.2em] text-aqua-400 ring-1 ring-aqua-500/25">
           {founder.shortRole}
         </span>
       </div>
@@ -32,7 +32,7 @@ export function FounderCard({
         <h3 className="font-display text-lg font-semibold tracking-tight text-chalk">
           {founder.name}
         </h3>
-        <p className="mt-1 text-sm text-leaf-400">
+        <p className="mt-1 text-sm text-aqua-400">
           {variant === "detailed" ? founder.role : `Co-Founder & ${founder.shortRole}`}
         </p>
         <p className="mt-4 flex-1 text-sm leading-relaxed text-fog">
@@ -42,7 +42,7 @@ export function FounderCard({
           href={founder.linkedin}
           target="_blank"
           rel="noreferrer"
-          className="mt-6 inline-flex w-fit items-center gap-2 text-sm text-chalk transition hover:text-leaf-400"
+          className="mt-6 inline-flex w-fit items-center gap-2 text-sm text-chalk transition hover:text-aqua-400"
         >
           <LinkedInIcon className="h-4 w-4" />
           LinkedIn

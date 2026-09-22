@@ -1,19 +1,35 @@
 @import "tailwindcss";
  
 @theme {
-  --color-ink-950: #04100b;
-  --color-ink-900: #071812;
-  --color-ink-850: #09201a;
-  --color-ink-800: #0c2a21;
-  --color-line: rgba(255, 255, 255, 0.08);
-  --color-line-strong: rgba(255, 255, 255, 0.16);
-  --color-fog: #9fb3aa;
-  --color-chalk: #f1f6f3;
-  --color-leaf-400: #3ee38a;
-  --color-leaf-500: #16d66b;
-  --color-leaf-600: #0fa653;
-  --color-tide-400: #3ecfd6;
-  --color-tide-500: #16a9b8;
+  /* New brand colors */
+  --color-ocean-950: #071C24;
+  --color-ocean-900: #0B4F58;
+  --color-ocean-800: #102A30;
+  --color-ocean-700: #1A4A52;
+  --color-ocean-600: #2A6A72;
+  --color-sand-50: #F6F8F6;
+  --color-sand-100: #E8EBE9;
+  --color-sand-200: #D4DBD6;
+  --color-line: rgba(16, 42, 48, 0.12);
+  --color-line-strong: rgba(16, 42, 48, 0.24);
+  --color-fog: #5A6E6B; /* Secondary text color - works on light backgrounds */
+  --color-chalk: #071C24; /* Main text color - dark ocean */
+  --color-aqua-400: #1AD4C0;
+  --color-aqua-500: #13B8A6;
+  --color-aqua-600: #0E9A8A;
+  --color-amber-500: #F2A93B;
+  --color-amber-600: #E09228;
+
+  /* Old color names mapped to new values for backward compatibility */
+  --color-ink-950: #071C24;
+  --color-ink-900: #0B4F58;
+  --color-ink-850: #102A30;
+  --color-ink-800: #1A4A52;
+  --color-leaf-400: #1AD4C0;
+  --color-leaf-500: #13B8A6;
+  --color-leaf-600: #0E9A8A;
+  --color-tide-400: #0B4F58;
+  --color-tide-500: #102A30;
  
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-sora), var(--font-inter), ui-sans-serif, sans-serif;
@@ -23,7 +39,7 @@
 }
  
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
  
 html {
@@ -38,8 +54,8 @@ html {
 }
  
 body {
-  background-color: var(--color-ink-950);
-  color: var(--color-chalk);
+  background-color: var(--color-sand-50);
+  color: var(--color-ocean-950);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -61,25 +77,25 @@ p {
 }
  
 ::-webkit-scrollbar-track {
-  background: var(--color-ink-950);
+  background: var(--color-sand-100);
 }
  
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
-  border: 3px solid var(--color-ink-950);
+  background: rgba(16, 42, 48, 0.2);
+  border: 3px solid var(--color-sand-100);
   border-radius: 9999px;
 }
  
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(62, 227, 138, 0.35);
+  background: rgba(19, 184, 166, 0.4);
 }
  
 ::selection {
-  background: rgba(22, 214, 107, 0.28);
+  background: rgba(19, 184, 166, 0.28);
 }
  
 *:focus-visible {
-  outline: 2px solid var(--color-leaf-400);
+  outline: 2px solid var(--color-aqua-500);
   outline-offset: 2px;
   border-radius: 2px;
 }
@@ -87,14 +103,14 @@ p {
 /* Ambient field: a soft water/light wash used behind dark sections. */
 .field-wash {
   background-image:
-    radial-gradient(62rem 32rem at 12% -12%, rgba(22, 214, 107, 0.12), transparent 62%),
-    radial-gradient(52rem 28rem at 96% 6%, rgba(22, 169, 184, 0.1), transparent 64%);
+    radial-gradient(62rem 32rem at 12% -12%, rgba(19, 184, 166, 0.08), transparent 62%),
+    radial-gradient(52rem 28rem at 96% 6%, rgba(11, 79, 88, 0.06), transparent 64%);
 }
  
 .grid-lines {
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    linear-gradient(to right, rgba(16, 42, 48, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 42, 48, 0.06) 1px, transparent 1px);
   background-size: 88px 88px;
   mask-image: radial-gradient(70% 60% at 50% 30%, #000 30%, transparent 100%);
 }
@@ -103,7 +119,7 @@ p {
   background: linear-gradient(
     to right,
     transparent,
-    rgba(255, 255, 255, 0.14),
+    rgba(16, 42, 48, 0.14),
     transparent
   );
 }
@@ -224,8 +240,8 @@ p {
   width: 9px;
   height: 9px;
   border-radius: 9999px;
-  background: var(--color-leaf-400);
-  box-shadow: 0 0 14px 3px rgba(62, 227, 138, 0.55);
+  background: var(--color-aqua-500);
+  box-shadow: 0 0 14px 3px rgba(19, 184, 166, 0.5);
   animation: signal-travel 5.6s var(--ease-out-soft) infinite;
 }
  
@@ -258,8 +274,8 @@ p {
   width: 8px;
   height: 8px;
   border-radius: 9999px;
-  background: var(--color-leaf-400);
-  box-shadow: 0 0 12px 3px rgba(62, 227, 138, 0.45);
+  background: var(--color-aqua-500);
+  box-shadow: 0 0 12px 3px rgba(19, 184, 166, 0.4);
   animation: flow-packet 6s var(--ease-out-soft) infinite;
 }
  
@@ -294,8 +310,8 @@ p {
   width: 7px;
   height: 7px;
   border-radius: 9999px;
-  background: var(--color-leaf-400);
-  box-shadow: 0 0 10px 2px rgba(62, 227, 138, 0.4);
+  background: var(--color-aqua-500);
+  box-shadow: 0 0 10px 2px rgba(19, 184, 166, 0.35);
   animation: flow-drop 2.6s var(--ease-out-soft) infinite;
 }
  
@@ -329,7 +345,7 @@ p {
   }
   35% {
     opacity: 1;
-    box-shadow: 0 0 10px 2px rgba(22, 214, 107, 0.35);
+    box-shadow: 0 0 10px 2px rgba(19, 184, 166, 0.3);
   }
 }
  
@@ -400,8 +416,8 @@ p {
     box-shadow: none;
   }
   4% {
-    border-color: rgba(62, 227, 138, 0.75);
-    box-shadow: 0 0 0 4px rgba(62, 227, 138, 0.1);
+    border-color: rgba(19, 184, 166, 0.7);
+    box-shadow: 0 0 0 4px rgba(19, 184, 166, 0.1);
   }
 }
  

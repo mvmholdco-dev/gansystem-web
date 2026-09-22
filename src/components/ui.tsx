@@ -18,8 +18,8 @@ export function Container({
  
 export function Eyebrow({ children }: { children: ReactNode }) {
   return (
-    <p className="inline-flex items-center gap-2.5 text-[0.68rem] font-medium uppercase tracking-[0.3em] text-leaf-400">
-      <span aria-hidden="true" className="h-px w-5 bg-leaf-500/60" />
+    <p className="inline-flex items-center gap-2.5 text-[0.68rem] font-medium uppercase tracking-[0.3em] text-aqua-500">
+      <span aria-hidden="true" className="h-px w-5 bg-aqua-500/60" />
       {children}
     </p>
   );
@@ -87,10 +87,10 @@ type ButtonVariant = "primary" | "secondary" | "ghost";
  
 const buttonStyles: Record<ButtonVariant, string> = {
   primary:
-    "bg-leaf-500 text-ink-950 shadow-[0_16px_36px_-20px_rgba(22,214,107,0.9)] hover:bg-leaf-400 hover:shadow-[0_18px_40px_-18px_rgba(22,214,107,0.85)]",
+    "bg-aqua-500 text-ocean-950 shadow-[0_16px_36px_-20px_rgba(19,184,166,0.85)] hover:bg-aqua-400 hover:shadow-[0_18px_40px_-18px_rgba(19,184,166,0.8)]",
   secondary:
-    "border border-line-strong bg-white/[0.03] text-chalk hover:border-leaf-500/45 hover:bg-white/[0.06]",
-  ghost: "text-chalk hover:text-leaf-400",
+    "border border-line-strong bg-white/[0.6] text-chalk hover:border-aqua-500/45 hover:bg-white/[0.8]",
+  ghost: "text-chalk hover:text-aqua-500",
 };
  
 export function CtaLink({

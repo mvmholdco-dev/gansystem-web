@@ -29,7 +29,7 @@ export default function WhatWeDoPage() {
         lead="GanSystems combines live water-quality data with clear operational controls so fish farmers can act with more confidence."
       />
  
-      <section className="border-y border-line bg-ink-900/50 py-20 sm:py-28">
+      <section className="border-y border-line bg-ocean-900/50 py-20 sm:py-28">
         <Container>
           <SectionHeading
             eyebrow="Inside the product"
@@ -55,9 +55,9 @@ export default function WhatWeDoPage() {
                 >
                   <article
                     id={solution.id}
-                    className="card-lift group grid gap-8 border border-line bg-white/[0.02] p-8 hover:border-leaf-500/30 sm:p-12 lg:grid-cols-[auto_1fr_20rem] lg:items-start"
+                    className="card-lift group grid gap-8 border border-line bg-white/[0.02] p-8 hover:border-aqua-500/30 sm:p-12 lg:grid-cols-[auto_1fr_20rem] lg:items-start"
                   >
-                    <span className="icon-pop grid h-14 w-14 place-items-center rounded-sm bg-leaf-500/10 text-leaf-400 ring-1 ring-leaf-500/25">
+                    <span className="icon-pop grid h-14 w-14 place-items-center rounded-sm bg-aqua-500/10 text-aqua-400 ring-1 ring-aqua-500/25">
                       <Icon className="h-7 w-7" />
                     </span>
                     <div>
@@ -72,7 +72,7 @@ export default function WhatWeDoPage() {
                       </p>
                     </div>
                     <p className="border-t border-line pt-5 text-sm text-chalk lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
-                      <span className="block text-[0.68rem] uppercase tracking-[0.24em] text-leaf-400">
+                      <span className="block text-[0.68rem] uppercase tracking-[0.24em] text-aqua-400">
                         In practice
                       </span>
                       <span className="mt-2 block">{solution.benefit}</span>

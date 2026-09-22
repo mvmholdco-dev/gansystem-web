@@ -33,7 +33,7 @@ const columns = [
  
 export function SiteFooter() {
   return (
-    <footer className="border-t border-line bg-ink-900">
+    <footer className="border-t border-line bg-ocean-900">
       <Container className="py-16 sm:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_2fr] lg:gap-16">
           <div className="max-w-sm">
@@ -43,7 +43,7 @@ export function SiteFooter() {
             </p>
             <a
               href={`mailto:${company.email}`}
-              className="mt-5 inline-block text-sm text-chalk underline-offset-4 transition hover:text-leaf-400 hover:underline"
+              className="mt-5 inline-block text-sm text-chalk underline-offset-4 transition hover:text-aqua-400 hover:underline"
             >
               {company.email}
             </a>
@@ -63,14 +63,14 @@ export function SiteFooter() {
                           href={link.href}
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-block text-sm text-fog transition duration-200 hover:translate-x-0.5 hover:text-leaf-400"
+                          className="inline-block text-sm text-fog transition duration-200 hover:translate-x-0.5 hover:text-aqua-400"
                         >
                           {link.label}
                         </a>
                       ) : (
                         <Link
                           href={link.href}
-                          className="inline-block text-sm text-fog transition duration-200 hover:translate-x-0.5 hover:text-leaf-400"
+                          className="inline-block text-sm text-fog transition duration-200 hover:translate-x-0.5 hover:text-aqua-400"
                         >
                           {link.label}
                         </Link>
@@ -94,7 +94,7 @@ export function SiteFooter() {
                   href={founder.linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-xs text-fog transition hover:text-leaf-400"
+                  className="text-xs text-fog transition hover:text-aqua-400"
                 >
                   {founder.shortRole} on LinkedIn
                 </a>

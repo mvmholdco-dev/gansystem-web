@@ -21,7 +21,7 @@ export function BrowserFrame({
   fixedRatio?: boolean;
 }) {
   return (
-    <div className="overflow-hidden rounded-sm border border-line-strong bg-ink-900 shadow-[0_40px_80px_-40px_rgba(0,0,0,1)] ring-1 ring-white/[0.06]">
+    <div className="overflow-hidden rounded-sm border border-line-strong bg-ocean-900 shadow-[0_40px_80px_-40px_rgba(0,0,0,1)] ring-1 ring-white/[0.06]">
       <div className="flex items-center gap-2 border-b border-line bg-white/[0.03] px-4 py-2.5">
         <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
         <span className="h-2.5 w-2.5 rounded-full bg-white/12" />
@@ -33,7 +33,7 @@ export function BrowserFrame({
       <div
         className={
           fixedRatio
-            ? "flex aspect-[16/9] items-center justify-center bg-ink-950/70 p-2 sm:p-3"
+            ? "flex aspect-[16/9] items-center justify-center bg-ocean-950/70 p-2 sm:p-3"
             : undefined
         }
       >
@@ -79,7 +79,7 @@ export function ProductShowcase() {
   };
  
   return (
-    <div className="overflow-hidden border border-line bg-ink-900/40">
+    <div className="overflow-hidden border border-line bg-ocean-900/40">
       <div className="grid lg:grid-cols-[19rem_minmax(0,1fr)]">
         <div
           role="tablist"
@@ -113,14 +113,14 @@ export function ProductShowcase() {
                   aria-hidden="true"
                   className={`absolute left-0 top-0 h-full w-[2px] origin-top transition-transform duration-300 ${
                     selected
-                      ? "scale-y-100 bg-leaf-500"
+                      ? "scale-y-100 bg-aqua-500"
                       : "scale-y-0 bg-transparent"
                   }`}
                 />
                 <span
                   aria-hidden="true"
                   className={`mt-0.5 font-mono text-[0.7rem] transition-colors ${
-                    selected ? "text-leaf-400" : "text-fog/70"
+                    selected ? "text-aqua-400" : "text-fog/70"
                   }`}
                 >
                   0{index + 1}
@@ -147,7 +147,7 @@ export function ProductShowcase() {
               href={company.prototypeUrl}
               target="_blank"
               rel="noreferrer"
-              className="text-chalk underline decoration-leaf-500/50 underline-offset-4 transition hover:text-leaf-400"
+              className="text-chalk underline decoration-aqua-500/50 underline-offset-4 transition hover:text-aqua-400"
             >
               gansystem.vercel.app
             </a>
@@ -198,7 +198,7 @@ export function ProductShowcase() {
                     <li key={highlight} className="flex gap-3 text-sm leading-relaxed text-fog">
                       <span
                         aria-hidden="true"
-                        className="mt-[0.45rem] h-1.5 w-1.5 shrink-0 bg-leaf-500"
+                        className="mt-[0.45rem] h-1.5 w-1.5 shrink-0 bg-aqua-500"
                       />
                       {highlight}
                     </li>

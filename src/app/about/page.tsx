@@ -3,7 +3,7 @@ import { Container, CtaLink, SectionHeading } from "@/components/ui";
 import { PageHero } from "@/components/page-hero";
 import { ArrowIcon } from "@/components/icons";
 import { PrincipleGrid } from "@/components/principle-grid";
-import { awards, company } from "@/lib/lib/content";
+import { awards, company, recognition } from "@/lib/lib/content";
  
 export const metadata: Metadata = {
   title: "About | GanSystems Limited",
@@ -43,8 +43,8 @@ export default function AboutPage() {
             </div>
  
             <div className="grid gap-px self-start overflow-hidden border border-line bg-line">
-              <div className="bg-ink-950 p-7">
-                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-leaf-400">
+              <div className="bg-ocean-950 p-7">
+                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-400">
                   Mission
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-fog">
@@ -52,8 +52,8 @@ export default function AboutPage() {
                   through accessible technology.
                 </p>
               </div>
-              <div className="bg-ink-950 p-7">
-                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-leaf-400">
+              <div className="bg-ocean-950 p-7">
+                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-400">
                   Vision
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-fog">
@@ -61,8 +61,8 @@ export default function AboutPage() {
                   dependable digital tools.
                 </p>
               </div>
-              <div className="bg-ink-950 p-7">
-                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-leaf-400">
+              <div className="bg-ocean-950 p-7">
+                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-400">
                   Recognition
                 </h2>
                 <ul className="mt-3 space-y-2 text-sm leading-relaxed text-fog">
@@ -73,13 +73,16 @@ export default function AboutPage() {
                     </li>
                   ))}
                 </ul>
+                <p className="mt-4 text-xs text-fog">
+                  {recognition.description}
+                </p>
               </div>
             </div>
           </div>
         </Container>
       </section>
  
-      <section className="border-y border-line bg-ink-900/50 py-20 sm:py-28">
+      <section className="border-y border-line bg-ocean-900/50 py-20 sm:py-28">
         <Container>
           <SectionHeading
             eyebrow="What guides us"
