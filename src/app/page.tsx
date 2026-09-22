@@ -3,7 +3,7 @@ import { Container, CtaLink, SectionHeading } from "@/components/ui";
 import { SignalRail } from "@/components/hero-system";
 import { BrowserFrame, ProductShowcase } from "@/components/product-showcase";
 import { HowItWorksTimeline } from "@/components/how-it-works-timeline";
-import { ConnectedSystem } from "@/components/connected-system";
+import { ConnectedSystem } from "@/components/connected-systems";
 import { PrincipleGrid } from "@/components/principle-grid";
 import { FoundersEditorial } from "@/components/founders-editorial";
 import { Reveal } from "@/components/reveal";
@@ -24,7 +24,7 @@ import {
   awards,
   productShots,
   solutions,
-} from "@/lib/content";
+} from "@/lib/lib/content";
  
 const problemIcons = [ClockIcon, HandIcon, DropIcon, GaugeIcon];
 const solutionIcons = [PondIcon, DropIcon, AnalysisIcon, TelemetryIcon];

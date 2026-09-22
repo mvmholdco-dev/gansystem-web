@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Logo } from "./logo";
-import { navLinks } from "@/lib/content";
+import { navLinks } from "@/lib/lib/content";
  
 export function SiteHeader() {
   const pathname = usePathname();

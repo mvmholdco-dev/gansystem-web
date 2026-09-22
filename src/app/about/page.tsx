@@ -3,7 +3,7 @@ import { Container, CtaLink, SectionHeading } from "@/components/ui";
 import { PageHero } from "@/components/page-hero";
 import { ArrowIcon } from "@/components/icons";
 import { PrincipleGrid } from "@/components/principle-grid";
-import { awards, company } from "@/lib/content";
+import { awards, company } from "@/lib/lib/content";
  
 export const metadata: Metadata = {
   title: "About | GanSystems Limited",

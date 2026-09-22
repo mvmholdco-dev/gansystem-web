@@ -6,7 +6,7 @@ import { BrowserFrame } from "@/components/product-showcase";
 import { HowItWorksTimeline } from "@/components/how-it-works-timeline";
 import { Reveal } from "@/components/reveal";
 import { ArrowIcon } from "@/components/icons";
-import { company, productShots, technologyLayers } from "@/lib/content";
+import { company, productShots, technologyLayers } from "@/lib/lib/content";
  
 export const metadata: Metadata = {
   title: "Technology | Gansystem Limited",

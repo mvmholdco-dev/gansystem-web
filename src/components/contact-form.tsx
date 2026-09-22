@@ -2,7 +2,7 @@
  
 import { useState } from "react";
 import type { FormEvent } from "react";
-import { company } from "@/lib/content";
+import { company } from "@/lib/lib/content";
  
 const inquiryTypes = [
   "Partnership",

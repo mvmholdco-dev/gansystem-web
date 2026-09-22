@@ -1,12 +1,12 @@
 import Image from "next/image";
-import type { Founder } from "@/lib/content";
+import type { TeamMember } from "@/lib/lib/content";
 import { LinkedInIcon } from "./icons";
  
 export function FounderCard({
   founder,
   variant = "compact",
 }: {
-  founder: Founder;
+  founder: TeamMember;
   variant?: "compact" | "detailed";
 }) {
   return (

@@ -10,7 +10,7 @@ import {
   PondIcon,
   TelemetryIcon,
 } from "@/components/icons";
-import { company, solutions } from "@/lib/content";
+import { company, solutions } from "@/lib/lib/content";
  
 export const metadata: Metadata = {
   title: "Solutions | Gansystem Limited",

@@ -3,7 +3,7 @@ import { Container } from "@/components/ui";
 import { PageHero } from "@/components/page-hero";
 import { ContactForm } from "@/components/contact-form";
 import { LinkedInIcon } from "@/components/icons";
-import { company, founders } from "@/lib/content";
+import { company, founders } from "@/lib/lib/content";
  
 export const metadata: Metadata = {
   title: "Contact | Gansystem Limited",
