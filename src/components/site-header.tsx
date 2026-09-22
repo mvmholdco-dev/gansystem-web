@@ -67,7 +67,7 @@ export function SiteHeader() {
                       {active ? (
                         <span
                           aria-hidden="true"
-                          className="absolute inset-x-3.5 -bottom-px h-px bg-aqua-500"
+                          className="absolute inset-x-3.5 -bottom-px h-px bg-aqua-400"
                         />
                       ) : null}
                     </Link>
@@ -80,7 +80,7 @@ export function SiteHeader() {
           <div className="hidden items-center gap-3 lg:flex">
             <Link
               href="/contact"
-              className="group inline-flex min-h-10 items-center gap-2 rounded-sm bg-aqua-500 px-4 text-sm font-medium text-ocean-950 shadow-[0_14px_30px_-20px_rgba(22,214,107,0.9)] transition duration-200 hover:bg-aqua-400"
+              className="group inline-flex min-h-10 items-center gap-2 rounded-sm bg-aqua-400 px-4 text-sm font-medium text-ocean-950 shadow-[0_14px_30px_-20px_rgba(22,214,107,0.9)] transition duration-200 hover:bg-aqua-400"
             >
               Request a Demo
               <svg
@@ -137,7 +137,7 @@ export function SiteHeader() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="block border-b border-line/70 py-3.5 text-base text-chalk transition-colors hover:text-aqua-400"
+                    className="block border-b border-line/70 py-3.5 text-base text-chalk transition-colors hover:text-aqua-300"
                   >
                     {link.label}
                   </Link>
@@ -146,7 +146,7 @@ export function SiteHeader() {
             </ul>
             <Link
               href="/contact"
-              className="mt-6 block rounded-sm bg-aqua-500 px-4 py-3.5 text-center text-sm font-medium text-ocean-950"
+              className="mt-6 block rounded-sm bg-aqua-400 px-4 py-3.5 text-center text-sm font-medium text-ocean-950"
             >
               Request a Demo
             </Link>

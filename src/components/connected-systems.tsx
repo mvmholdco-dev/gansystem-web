@@ -27,7 +27,7 @@ function Connector({ label }: { label: string }) {
     <div className="flex items-center justify-center gap-4 py-4">
       <div aria-hidden="true" className="relative h-16 w-px bg-line-strong">
         <span className="flow-drop" />
-        <span className="absolute -bottom-px left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 border-b border-r border-aqua-500/70" />
+        <span className="absolute -bottom-px left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 border-b border-r border-aqua-300/70" />
       </div>
       <span className="text-[0.62rem] uppercase tracking-[0.22em] text-fog">
         {label}
@@ -50,7 +50,7 @@ export function ConnectedSystem() {
  
             <Reveal
               delay={index * 90}
-              className="group relative overflow-hidden border border-line bg-ocean-900/40 transition-colors duration-300 hover:border-aqua-500/30"
+              className="group relative overflow-hidden border border-line bg-ocean-900/40 transition-colors duration-300 hover:border-aqua-300/30"
             >
               <span
                 aria-hidden="true"
@@ -59,10 +59,10 @@ export function ConnectedSystem() {
               <div className="grid gap-6 p-6 sm:p-8 lg:grid-cols-[15rem_1fr] lg:gap-10">
                 <div>
                   <div className="flex items-center gap-3">
-                    <span className="flex h-10 w-10 items-center justify-center border border-line-strong bg-ocean-950 text-aqua-400 transition duration-300 group-hover:border-aqua-500/60 group-hover:bg-aqua-500/10">
+                    <span className="flex h-10 w-10 items-center justify-center border border-line-strong bg-ocean-950 text-aqua-300 transition duration-300 group-hover:border-aqua-300/60 group-hover:bg-aqua-400/10">
                       <Icon className="h-5 w-5" />
                     </span>
-                    <span className="font-mono text-xs text-aqua-400">
+                    <span className="font-mono text-xs text-aqua-300">
                       {String(index + 1).padStart(2, "0")}
                     </span>
                   </div>
@@ -78,11 +78,11 @@ export function ConnectedSystem() {
                   {layer.nodes.map((node, nodeIndex) => (
                     <li
                       key={node.name}
-                      className="flex items-start gap-2.5 border border-line bg-ocean-950 p-3.5 transition duration-300 hover:border-aqua-500/40 hover:bg-ocean-800 sm:gap-3 sm:p-4"
+                      className="flex items-start gap-2.5 border border-line bg-ocean-950 p-3.5 transition duration-300 hover:border-aqua-300/40 hover:bg-ocean-800 sm:gap-3 sm:p-4"
                     >
                       <span
                         aria-hidden="true"
-                        className="node-blip mt-[0.35rem] h-2 w-2 shrink-0 rounded-full bg-aqua-500"
+                        className="node-blip mt-[0.35rem] h-2 w-2 shrink-0 rounded-full bg-aqua-400"
                         style={{
                           animationDelay: `${(index * 3 + nodeIndex) * 0.4}s`,
                         }}

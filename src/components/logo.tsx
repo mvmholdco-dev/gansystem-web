@@ -21,7 +21,7 @@ export function Logo({ compact = false }: { compact?: boolean }) {
             d="M12 3.5c2.7 2 4.1 4 4.1 6a4.1 4.1 0 1 1-8.2 0c0-2 1.4-4 4.1-6Z"
             fill="none"
             stroke="currentColor"
-            className="text-aqua-500"
+            className="text-aqua-300"
             strokeWidth="1.6"
             strokeLinejoin="round"
           />

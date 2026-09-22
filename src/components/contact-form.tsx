@@ -13,7 +13,7 @@ const inquiryTypes = [
 ];
  
 const fieldClass =
-  "mt-2.5 w-full rounded-sm border border-line bg-white/[0.03] px-4 py-3 text-sm text-chalk placeholder:text-fog/70 transition duration-200 hover:border-line-strong focus:border-aqua-500/60 focus:bg-white/[0.05]";
+  "mt-2.5 w-full rounded-sm border border-line bg-white/[0.03] px-4 py-3 text-sm text-chalk placeholder:text-fog/70 transition duration-200 hover:border-line-strong focus:border-aqua-300/60 focus:bg-white/[0.05]";
  
 export function ContactForm() {
   const [sent, setSent] = useState(false);
@@ -97,7 +97,7 @@ export function ContactForm() {
       <div className="flex flex-wrap items-center gap-4">
         <button
           type="submit"
-          className="inline-flex min-h-11 items-center justify-center rounded-sm bg-aqua-500 px-6 text-sm font-medium text-ocean-950 shadow-[0_16px_36px_-20px_rgba(22,214,107,0.9)] transition duration-200 hover:bg-aqua-400"
+          className="inline-flex min-h-11 items-center justify-center rounded-sm bg-aqua-400 px-6 text-sm font-medium text-ocean-950 shadow-[0_16px_36px_-20px_rgba(22,214,107,0.9)] transition duration-200 hover:bg-aqua-400"
         >
           Send Inquiry
         </button>

@@ -84,7 +84,7 @@ export function SignalRail() {
               <li key={stage.label} className="flex items-start gap-3 lg:block">
                 <span
                   aria-hidden="true"
-                  className="signal-node flex h-11 w-11 shrink-0 items-center justify-center border border-line-strong bg-ocean-950 text-aqua-400"
+                  className="signal-node flex h-11 w-11 shrink-0 items-center justify-center border border-line-strong bg-ocean-950 text-aqua-300"
                   style={{ animationDelay: `${index * 0.55}s` }}
                 >
                   <Icon className="h-5 w-5" />

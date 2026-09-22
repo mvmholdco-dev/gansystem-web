@@ -113,14 +113,14 @@ export function ProductShowcase() {
                   aria-hidden="true"
                   className={`absolute left-0 top-0 h-full w-[2px] origin-top transition-transform duration-300 ${
                     selected
-                      ? "scale-y-100 bg-aqua-500"
+                      ? "scale-y-100 bg-aqua-400"
                       : "scale-y-0 bg-transparent"
                   }`}
                 />
                 <span
                   aria-hidden="true"
                   className={`mt-0.5 font-mono text-[0.7rem] transition-colors ${
-                    selected ? "text-aqua-400" : "text-fog/70"
+                    selected ? "text-aqua-300" : "text-fog/70"
                   }`}
                 >
                   0{index + 1}
@@ -147,7 +147,7 @@ export function ProductShowcase() {
               href={company.prototypeUrl}
               target="_blank"
               rel="noreferrer"
-              className="text-chalk underline decoration-aqua-500/50 underline-offset-4 transition hover:text-aqua-400"
+              className="text-chalk underline decoration-aqua-500/50 underline-offset-4 transition hover:text-aqua-300"
             >
               gansystem.vercel.app
             </a>
@@ -198,7 +198,7 @@ export function ProductShowcase() {
                     <li key={highlight} className="flex gap-3 text-sm leading-relaxed text-fog">
                       <span
                         aria-hidden="true"
-                        className="mt-[0.45rem] h-1.5 w-1.5 shrink-0 bg-aqua-500"
+                        className="mt-[0.45rem] h-1.5 w-1.5 shrink-0 bg-aqua-400"
                       />
                       {highlight}
                     </li>

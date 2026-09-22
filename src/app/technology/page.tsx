@@ -38,7 +38,7 @@ export default function TechnologyPage() {
                   delay={index * 70}
                   className="group bg-ocean-950 p-7 transition-colors duration-300 hover:bg-ocean-900/70 sm:p-9"
                 >
-                  <span className="font-mono text-xs text-fog transition-colors duration-200 group-hover:text-aqua-400">
+                  <span className="font-mono text-xs text-fog transition-colors duration-200 group-hover:text-aqua-300">
                     {layer.index}
                   </span>
                   <h2 className="mt-3 font-display text-[1.0625rem] font-semibold tracking-tight text-chalk">

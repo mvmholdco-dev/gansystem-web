@@ -1,22 +1,20 @@
 @import "tailwindcss";
  
 @theme {
-  /* New brand colors */
+  /* Premium dark/ocean brand colors */
   --color-ocean-950: #071C24;
   --color-ocean-900: #0B4F58;
   --color-ocean-800: #102A30;
   --color-ocean-700: #1A4A52;
   --color-ocean-600: #2A6A72;
-  --color-sand-50: #F6F8F6;
-  --color-sand-100: #E8EBE9;
-  --color-sand-200: #D4DBD6;
-  --color-line: rgba(16, 42, 48, 0.12);
-  --color-line-strong: rgba(16, 42, 48, 0.24);
-  --color-fog: #5A6E6B; /* Secondary text color - works on light backgrounds */
-  --color-chalk: #071C24; /* Main text color - dark ocean */
-  --color-aqua-400: #1AD4C0;
-  --color-aqua-500: #13B8A6;
-  --color-aqua-600: #0E9A8A;
+  --color-aqua-300: #4DD8C8;
+  --color-aqua-400: #2CC9B8;
+  --color-aqua-500: #1AB8A8;
+  --color-aqua-600: #109999;
+  --color-line: rgba(255, 255, 255, 0.08);
+  --color-line-strong: rgba(255, 255, 255, 0.16);
+  --color-fog: #9FB3AA;
+  --color-chalk: #F1F6F3;
   --color-amber-500: #F2A93B;
   --color-amber-600: #E09228;
 
@@ -25,9 +23,9 @@
   --color-ink-900: #0B4F58;
   --color-ink-850: #102A30;
   --color-ink-800: #1A4A52;
-  --color-leaf-400: #1AD4C0;
-  --color-leaf-500: #13B8A6;
-  --color-leaf-600: #0E9A8A;
+  --color-leaf-400: #4DD8C8;
+  --color-leaf-500: #1AB8A8;
+  --color-leaf-600: #109999;
   --color-tide-400: #0B4F58;
   --color-tide-500: #102A30;
  
@@ -39,7 +37,7 @@
 }
  
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 }
  
 html {
@@ -54,8 +52,8 @@ html {
 }
  
 body {
-  background-color: var(--color-sand-50);
-  color: var(--color-ocean-950);
+  background-color: var(--color-ocean-950);
+  color: var(--color-chalk);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -77,25 +75,25 @@ p {
 }
  
 ::-webkit-scrollbar-track {
-  background: var(--color-sand-100);
+  background: var(--color-ocean-950);
 }
  
 ::-webkit-scrollbar-thumb {
-  background: rgba(16, 42, 48, 0.2);
-  border: 3px solid var(--color-sand-100);
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid var(--color-ocean-950);
   border-radius: 9999px;
 }
  
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(19, 184, 166, 0.4);
+  background: rgba(77, 216, 200, 0.4);
 }
  
 ::selection {
-  background: rgba(19, 184, 166, 0.28);
+  background: rgba(77, 216, 200, 0.28);
 }
  
 *:focus-visible {
-  outline: 2px solid var(--color-aqua-500);
+  outline: 2px solid var(--color-aqua-300);
   outline-offset: 2px;
   border-radius: 2px;
 }
@@ -103,14 +101,14 @@ p {
 /* Ambient field: a soft water/light wash used behind dark sections. */
 .field-wash {
   background-image:
-    radial-gradient(62rem 32rem at 12% -12%, rgba(19, 184, 166, 0.08), transparent 62%),
-    radial-gradient(52rem 28rem at 96% 6%, rgba(11, 79, 88, 0.06), transparent 64%);
+    radial-gradient(62rem 32rem at 12% -12%, rgba(77, 216, 200, 0.12), transparent 62%),
+    radial-gradient(52rem 28rem at 96% 6%, rgba(11, 79, 88, 0.08), transparent 64%);
 }
  
 .grid-lines {
   background-image:
-    linear-gradient(to right, rgba(16, 42, 48, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(16, 42, 48, 0.06) 1px, transparent 1px);
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 88px 88px;
   mask-image: radial-gradient(70% 60% at 50% 30%, #000 30%, transparent 100%);
 }
@@ -119,7 +117,7 @@ p {
   background: linear-gradient(
     to right,
     transparent,
-    rgba(16, 42, 48, 0.14),
+    rgba(255, 255, 255, 0.14),
     transparent
   );
 }
@@ -240,8 +238,8 @@ p {
   width: 9px;
   height: 9px;
   border-radius: 9999px;
-  background: var(--color-aqua-500);
-  box-shadow: 0 0 14px 3px rgba(19, 184, 166, 0.5);
+  background: var(--color-aqua-300);
+  box-shadow: 0 0 14px 3px rgba(77, 216, 200, 0.5);
   animation: signal-travel 5.6s var(--ease-out-soft) infinite;
 }
  
@@ -274,8 +272,8 @@ p {
   width: 8px;
   height: 8px;
   border-radius: 9999px;
-  background: var(--color-aqua-500);
-  box-shadow: 0 0 12px 3px rgba(19, 184, 166, 0.4);
+  background: var(--color-aqua-300);
+  box-shadow: 0 0 12px 3px rgba(77, 216, 200, 0.4);
   animation: flow-packet 6s var(--ease-out-soft) infinite;
 }
  
@@ -310,8 +308,8 @@ p {
   width: 7px;
   height: 7px;
   border-radius: 9999px;
-  background: var(--color-aqua-500);
-  box-shadow: 0 0 10px 2px rgba(19, 184, 166, 0.35);
+  background: var(--color-aqua-300);
+  box-shadow: 0 0 10px 2px rgba(77, 216, 200, 0.35);
   animation: flow-drop 2.6s var(--ease-out-soft) infinite;
 }
  
@@ -345,7 +343,7 @@ p {
   }
   35% {
     opacity: 1;
-    box-shadow: 0 0 10px 2px rgba(19, 184, 166, 0.3);
+    box-shadow: 0 0 10px 2px rgba(77, 216, 200, 0.3);
   }
 }
  
@@ -416,8 +414,8 @@ p {
     box-shadow: none;
   }
   4% {
-    border-color: rgba(19, 184, 166, 0.7);
-    box-shadow: 0 0 0 4px rgba(19, 184, 166, 0.1);
+    border-color: rgba(77, 216, 200, 0.7);
+    box-shadow: 0 0 0 4px rgba(77, 216, 200, 0.1);
   }
 }
  

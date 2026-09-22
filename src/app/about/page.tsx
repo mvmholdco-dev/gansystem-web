@@ -44,7 +44,7 @@ export default function AboutPage() {
  
             <div className="grid gap-px self-start overflow-hidden border border-line bg-line">
               <div className="bg-ocean-950 p-7">
-                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-400">
+                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-300">
                   Mission
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-fog">
@@ -53,7 +53,7 @@ export default function AboutPage() {
                 </p>
               </div>
               <div className="bg-ocean-950 p-7">
-                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-400">
+                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-300">
                   Vision
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-fog">
@@ -62,7 +62,7 @@ export default function AboutPage() {
                 </p>
               </div>
               <div className="bg-ocean-950 p-7">
-                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-400">
+                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-300">
                   Recognition
                 </h2>
                 <ul className="mt-3 space-y-2 text-sm leading-relaxed text-fog">

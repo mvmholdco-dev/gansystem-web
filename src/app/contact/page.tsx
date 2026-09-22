@@ -38,18 +38,18 @@ export default function ContactPage() {
  
             <div className="grid gap-px self-start overflow-hidden border border-line bg-line">
               <div className="bg-ocean-950 p-7">
-                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-400">
+                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-300">
                   Email
                 </h2>
                 <a
                   href={`mailto:${company.email}`}
-                  className="mt-3 block text-base text-chalk underline-offset-4 transition hover:text-aqua-400 hover:underline"
+                  className="mt-3 block text-base text-chalk underline-offset-4 transition hover:text-aqua-300 hover:underline"
                 >
                   {company.email}
                 </a>
               </div>
               <div className="bg-ocean-950 p-7">
-                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-400">
+                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-300">
                   Founders
                 </h2>
                 <ul className="mt-4 space-y-3">
@@ -59,7 +59,7 @@ export default function ContactPage() {
                         href={founder.linkedin}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center gap-2 text-sm text-fog transition hover:text-aqua-400"
+                        className="inline-flex items-center gap-2 text-sm text-fog transition hover:text-aqua-300"
                       >
                         <LinkedInIcon className="h-4 w-4" />
                         {founder.name} — {founder.shortRole}
@@ -69,14 +69,14 @@ export default function ContactPage() {
                 </ul>
               </div>
               <div className="bg-ocean-950 p-7">
-                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-400">
+                <h2 className="text-[0.68rem] uppercase tracking-[0.24em] text-aqua-300">
                   Prototype
                 </h2>
                 <a
                   href={company.prototypeUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-3 block text-sm text-chalk transition hover:text-aqua-400"
+                  className="mt-3 block text-sm text-chalk transition hover:text-aqua-300"
                 >
                   View the live GanSystems prototype ↗
                 </a>
