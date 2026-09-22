@@ -6,7 +6,7 @@ import {
   TelemetryIcon,
 } from "@/components/icons";
 import { Reveal } from "@/components/reveal";
-import { ecosystemLayers } from "@/lib/content";
+import { ecosystemLayers } from "@/lib/lib/content";
  
 const layerIcons: Record<string, ComponentType<SVGProps<SVGSVGElement>>> = {
   "physical-farm": PondIcon,

@@ -7,7 +7,7 @@ import {
   TelemetryIcon,
 } from "@/components/icons";
 import { Reveal } from "@/components/reveal";
-import { howItWorks } from "@/lib/content";
+import { howItWorks } from "@/lib/lib/content";
  
 const stageIcons: Record<string, ComponentType<SVGProps<SVGSVGElement>>> = {
   sense: SensorIcon,

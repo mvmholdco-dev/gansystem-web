@@ -3,7 +3,7 @@ import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { company } from "@/lib/content";
+import { company } from "@/lib/lib/content";
  
 const inter = Inter({
   variable: "--font-inter",

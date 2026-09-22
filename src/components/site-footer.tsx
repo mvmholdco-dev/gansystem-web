@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container } from "./ui";
 import { Logo } from "./logo";
-import { company, founders } from "@/lib/content";
+import { company, founders } from "@/lib/lib/content";
  
 const columns = [
   {

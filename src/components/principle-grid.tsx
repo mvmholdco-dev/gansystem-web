@@ -7,7 +7,7 @@ import {
   TelemetryIcon,
 } from "@/components/icons";
 import { Reveal } from "@/components/reveal";
-import { principles } from "@/lib/content";
+import { principles } from "@/lib/lib/content";
  
 const principleIcons: Record<string, ComponentType<SVGProps<SVGSVGElement>>> = {
   "practical-technology": HandIcon,

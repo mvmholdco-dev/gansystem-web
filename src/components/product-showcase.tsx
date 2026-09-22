@@ -2,7 +2,7 @@
  
 import Image from "next/image";
 import { useRef, useState } from "react";
-import { company, productShots } from "@/lib/content";
+import { company, productShots } from "@/lib/lib/content";
  
 export function BrowserFrame({
   src,

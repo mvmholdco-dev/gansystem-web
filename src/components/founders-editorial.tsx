@@ -1,6 +1,6 @@
 import Image from "next/image";
-import type { TeamMember } from "@/lib/content";
-import { team } from "@/lib/content";
+import type { TeamMember } from "@/lib/lib/content";
+import { team } from "@/lib/lib/content";
 import { LinkedInIcon } from "@/components/icons";
 import { Reveal } from "@/components/reveal";
  
