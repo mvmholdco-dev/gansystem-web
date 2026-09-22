@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Container } from "./ui";
-import { Logo } from "./logo";
+import { Container } from "@/components/ui";
+import { Logo } from "@/components/logo";
 import { company, founders } from "@/lib/lib/content";
  
 const columns = [

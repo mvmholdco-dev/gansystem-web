@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { TeamMember } from "@/lib/lib/content";
-import { LinkedInIcon } from "./icons";
+import { LinkedInIcon } from "@/components/icons";
  
 export function FounderCard({
   founder,
