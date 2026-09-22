@@ -1,26 +1,45 @@
-import { FounderCard } from "@/components/founder-card";
-
-const founders = [
-  { name: "Onah Chiedozie Maxwell", role: "Co-Founder & Chief Executive Officer", bio: "Business leadership, strategy, partnerships, and overall company direction.", link: "https://www.linkedin.com/in/maxwell-onah-327335290", image: "/screenshots/maxwell.png" },
-  { name: "Okonkwo John Valentine", role: "Co-Founder & Chief Technology Officer", bio: "Hardware, engineering, IoT infrastructure, system architecture, and technical development.", link: "https://www.linkedin.com/in/jvcbyte", image: "/screenshots/valentine.png" },
-  { name: "Amaddin Iyobosa Majid", role: "Co-Founder & Chief Operating Officer", bio: "Software systems, product development, automation, operations, and business execution.", link: "https://www.linkedin.com/in/codeandbe", image: "/screenshots/iyobosa.png" },
-];
-
+import type { Metadata } from "next";
+import { Container, CtaLink } from "@/components/ui";
+import { PageHero } from "@/components/page-hero";
+import { FoundersEditorial } from "@/components/founders-editorial";
+import { ArrowIcon } from "@/components/icons";
+ 
+export const metadata: Metadata = {
+  title: "Team | GanSystems Limited",
+  description:
+    "The team behind GanSystems, covering business leadership, engineering and IoT infrastructure, operations, and marketing.",
+};
+ 
 export default function TeamPage() {
   return (
-    <main className="flex-1">
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#22D3EE]">Our team</p>
-          <h1 className="mt-4 text-4xl font-bold text-[#F5F5F5] sm:text-5xl">The founders behind GanSystems.</h1>
-          <p className="mt-6 text-lg leading-8 text-[#9CA3AF]">The company is being built by a small team with strong overlap across product, engineering, and field operations.</p>
-        </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {founders.map((founder) => (
-            <FounderCard key={founder.name} {...founder} />
-          ))}
-        </div>
+    <>
+      <PageHero
+        eyebrow="Our team"
+        title="The team behind GanSystems"
+        lead="The company is being built by a small team with strong overlap across product, engineering, and field operations."
+      />
+ 
+      <section className="py-20 sm:py-28">
+        <Container>
+          <FoundersEditorial variant="detailed" />
+ 
+          <div className="mt-16 flex flex-col items-start justify-between gap-8 border border-line bg-white/[0.02] p-8 sm:flex-row sm:items-center sm:p-12">
+            <div>
+              <h2 className="font-display text-[1.5rem] leading-snug font-semibold tracking-[-0.02em] text-chalk sm:text-[1.75rem]">
+                Want to talk to the team?
+              </h2>
+              <p className="mt-3 max-w-xl text-sm leading-relaxed text-fog sm:text-base">
+                Partnerships, pilots, and investment conversations go straight
+                to the founders.
+              </p>
+            </div>
+            <CtaLink href="/contact">
+              Request a Demo
+              <ArrowIcon className="h-4 w-4" />
+            </CtaLink>
+          </div>
+        </Container>
       </section>
-    </main>
+    </>
   );
 }

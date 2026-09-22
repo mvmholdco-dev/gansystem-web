@@ -1,50 +1,108 @@
-import { FeatureCard } from "@/components/feature-card";
-import { ScreenshotGallery } from "@/components/screenshot-gallery";
-
-const features = [
-  {
-    title: "Water-Quality Monitoring",
-    description: "Provide a single view of water conditions, asset health, and pond activity so operators can stay informed without constant manual reporting.",
-    icon: "📡",
-  },
-  {
-    title: "Automated Water Control",
-    description: "Support draining and refilling routines based on connected data so fish farmers can respond faster to changing water conditions.",
-    icon: "💧",
-  },
-  {
-    title: "Intelligent Analysis",
-    description: "Turn live telemetry into clearer signals that help teams understand conditions and decide when intervention is needed.",
-    icon: "🪲",
-  },
-  {
-    title: "Dashboard Analytics",
-    description: "Visualize telemetry trends and performance indicators in a way that supports decisions, reviews, and reporting.",
-    icon: "📊",
-  },
-];
-
+import type { Metadata } from "next";
+import { Container, CtaLink, SectionHeading } from "@/components/ui";
+import { PageHero } from "@/components/page-hero";
+import { ProductShowcase } from "@/components/product-showcase";
+import { Reveal } from "@/components/reveal";
+import {
+  AnalysisIcon,
+  ArrowIcon,
+  DropIcon,
+  PondIcon,
+  TelemetryIcon,
+} from "@/components/icons";
+import { company, solutions } from "@/lib/content";
+ 
+export const metadata: Metadata = {
+  title: "Solutions | Gansystem Limited",
+  description:
+    "Water-quality monitoring, automated water control, intelligent analysis, and live telemetry for aquaculture operations.",
+};
+ 
+const icons = [PondIcon, DropIcon, AnalysisIcon, TelemetryIcon];
+ 
 export default function WhatWeDoPage() {
   return (
-    <main className="flex-1">
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#22D3EE]">What we do</p>
-          <h1 className="mt-4 text-4xl font-bold text-[#F5F5F5] sm:text-5xl">A practical platform for monitoring and managing aquaculture operations.</h1>
-          <p className="mt-6 text-lg leading-8 text-[#9CA3AF]">GanSystems combines live water-quality data with clear operational controls so fish farmers can act with more confidence.</p>
-        </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {features.map((feature) => (
-            <FeatureCard key={feature.title} {...feature} />
-          ))}
-        </div>
-        <div className="mt-12 rounded-[16px] border border-[#1F2937] bg-[#12171A] p-6 sm:p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#22D3EE]">Supporting visuals</p>
-          <div className="mt-8">
-            <ScreenshotGallery />
+    <>
+      <PageHero
+        eyebrow="What we do"
+        title="A practical platform for monitoring and managing aquaculture operations"
+        lead="GanSystems combines live water-quality data with clear operational controls so fish farmers can act with more confidence."
+      />
+ 
+      <section className="border-y border-line bg-ink-900/50 py-20 sm:py-28">
+        <Container>
+          <SectionHeading
+            eyebrow="Inside the product"
+            title="Screens from the working prototype"
+            lead="Dashboard, telemetry, controllers, and system architecture, before the capability detail below."
+          />
+          <div className="mt-14">
+            <ProductShowcase />
           </div>
-        </div>
+        </Container>
       </section>
-    </main>
+ 
+      <section className="py-20 sm:py-28">
+        <Container>
+          <div className="space-y-4">
+            {solutions.map((solution, index) => {
+              const Icon = icons[index];
+              return (
+                <Reveal
+                  key={solution.id}
+                  delay={index * 60}
+                  className="scroll-mt-28"
+                >
+                  <article
+                    id={solution.id}
+                    className="card-lift group grid gap-8 border border-line bg-white/[0.02] p-8 hover:border-leaf-500/30 sm:p-12 lg:grid-cols-[auto_1fr_20rem] lg:items-start"
+                  >
+                    <span className="icon-pop grid h-14 w-14 place-items-center rounded-sm bg-leaf-500/10 text-leaf-400 ring-1 ring-leaf-500/25">
+                      <Icon className="h-7 w-7" />
+                    </span>
+                    <div>
+                      <h2 className="font-display text-xl font-semibold tracking-[-0.015em] text-chalk sm:text-[1.6rem]">
+                        {solution.title}
+                      </h2>
+                      <p className="mt-3 max-w-2xl text-sm leading-relaxed text-fog sm:text-base">
+                        {solution.summary}
+                      </p>
+                      <p className="mt-4 max-w-2xl text-sm leading-relaxed text-fog">
+                        {solution.detail}
+                      </p>
+                    </div>
+                    <p className="border-t border-line pt-5 text-sm text-chalk lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
+                      <span className="block text-[0.68rem] uppercase tracking-[0.24em] text-leaf-400">
+                        In practice
+                      </span>
+                      <span className="mt-2 block">{solution.benefit}</span>
+                    </p>
+                  </article>
+                </Reveal>
+              );
+            })}
+          </div>
+        </Container>
+      </section>
+  
+      <section className="py-20 sm:py-28">
+        <Container>
+          <div className="flex flex-col items-start justify-between gap-8 border border-line bg-white/[0.02] p-8 sm:flex-row sm:items-center sm:p-12">
+            <h2 className="max-w-xl font-display text-[1.5rem] leading-snug font-semibold tracking-[-0.02em] text-chalk sm:text-[1.75rem]">
+              See how GanSystems would fit your farm.
+            </h2>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <CtaLink href="/contact">
+                Request a Demo
+                <ArrowIcon className="h-4 w-4" />
+              </CtaLink>
+              <CtaLink href={company.prototypeUrl} variant="secondary">
+                Open the live prototype ↗
+              </CtaLink>
+            </div>
+          </div>
+        </Container>
+      </section>
+    </>
   );
 }
