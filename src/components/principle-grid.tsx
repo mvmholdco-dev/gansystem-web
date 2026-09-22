@@ -36,17 +36,17 @@ export function PrincipleGrid() {
             as="li"
             key={principle.id}
             delay={index * 70}
-            className={`group relative flex flex-col overflow-hidden border border-line bg-ink-950 p-6 transition duration-300 hover:-translate-y-0.5 hover:border-leaf-500/40 hover:bg-ink-900/70 ${spans[index]}`}
+            className={`group relative flex flex-col overflow-hidden border border-line bg-ocean-950 p-6 transition duration-300 hover:-translate-y-0.5 hover:border-aqua-500/40 hover:bg-ocean-900/70 ${spans[index]}`}
           >
             <span
               aria-hidden="true"
-              className="absolute inset-x-0 top-0 h-px origin-left scale-x-0 bg-gradient-to-r from-leaf-500 to-tide-500 transition-transform duration-500 group-hover:scale-x-100"
+              className="absolute inset-x-0 top-0 h-px origin-left scale-x-0 bg-gradient-to-r from-aqua-500 to-ocean-900 transition-transform duration-500 group-hover:scale-x-100"
             />
             <div className="flex items-center justify-between">
-              <span className="flex h-10 w-10 items-center justify-center border border-line-strong bg-ink-900 text-leaf-400 transition duration-300 group-hover:border-leaf-500/60 group-hover:bg-leaf-500/10">
+              <span className="flex h-10 w-10 items-center justify-center border border-line-strong bg-ocean-900 text-aqua-400 transition duration-300 group-hover:border-aqua-500/60 group-hover:bg-aqua-500/10">
                 <Icon className="h-5 w-5" />
               </span>
-              <span className="font-mono text-xs text-fog transition-colors duration-300 group-hover:text-leaf-400">
+              <span className="font-mono text-xs text-fog transition-colors duration-300 group-hover:text-aqua-400">
                 {String(index + 1).padStart(2, "0")}
               </span>
             </div>

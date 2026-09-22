@@ -46,12 +46,12 @@ export default function HomePage() {
           <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] lg:gap-14">
             <div>
               <p className="inline-flex items-center gap-2.5 border border-line bg-white/[0.04] px-3.5 py-1.5 text-[0.7rem] uppercase tracking-[0.18em] text-fog">
-                <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-leaf-500" />
+                <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-aqua-500" />
                 IoT aquaculture platform
               </p>
               <h1 className="mt-6 text-balance font-display text-[2.1rem] leading-[1.06] font-semibold tracking-[-0.02em] text-chalk sm:text-[2.75rem] xl:text-[2.95rem]">
                 Water-quality monitoring and{" "}
-                <span className="text-leaf-400">automated water control</span>{" "}
+                <span className="text-aqua-400">automated water control</span>{" "}
                 for fish farms
               </h1>
               <p className="mt-6 max-w-xl text-[1rem] leading-[1.75] text-fog sm:text-[1.075rem]">
@@ -72,13 +72,13 @@ export default function HomePage() {
               <div className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-line pt-6 text-sm text-fog">
                 <Link
                   href="#product"
-                  className="text-chalk underline decoration-leaf-500/50 underline-offset-4 transition hover:text-leaf-400"
+                  className="text-chalk underline decoration-aqua-500/50 underline-offset-4 transition hover:text-aqua-400"
                 >
                   See the product screens
                 </Link>
                 <Link
                   href="/technology"
-                  className="transition hover:text-leaf-400"
+                  className="transition hover:text-aqua-400"
                 >
                   How the technology works
                 </Link>
@@ -109,7 +109,7 @@ export default function HomePage() {
       </section>
  
       {/* Platform specification strip */}
-      <section className="border-y border-line bg-ink-900/60">
+      <section className="border-y border-line bg-ocean-900/60">
         <Container>
           <dl className="grid divide-y divide-line sm:grid-cols-2 sm:divide-x-0 lg:grid-cols-4 lg:divide-x lg:divide-y-0">
             {platformSpecs.map((spec, index) => (
@@ -143,7 +143,7 @@ export default function HomePage() {
             aside={
               <Link
                 href="#how-it-works"
-                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-leaf-400"
+                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-aqua-400"
               >
                 See how the platform responds <ArrowIcon className="h-4 w-4" />
               </Link>
@@ -157,7 +157,7 @@ export default function HomePage() {
                 <Reveal
                   key={problem.title}
                   delay={index * 70}
-                  className="group bg-ink-950 p-7 transition-colors duration-300 hover:bg-ink-900/70 sm:p-9"
+                  className="group bg-ocean-950 p-7 transition-colors duration-300 hover:bg-ocean-900/70 sm:p-9"
                 >
                   <div className="flex items-start gap-4">
                     <span className="icon-pop mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-sm bg-white/[0.04] text-fog ring-1 ring-line">
@@ -182,7 +182,7 @@ export default function HomePage() {
       {/* Product showcase */}
       <section
         id="product"
-        className="border-y border-line bg-ink-900/50 py-20 sm:py-28"
+        className="border-y border-line bg-ocean-900/50 py-20 sm:py-28"
       >
         <Container>
           <SectionHeading
@@ -194,7 +194,7 @@ export default function HomePage() {
                 href={company.prototypeUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-leaf-400"
+                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-aqua-400"
               >
                 Open the live prototype ↗
               </a>
@@ -216,7 +216,7 @@ export default function HomePage() {
             aside={
               <Link
                 href="/what-we-do"
-                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-leaf-400"
+                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-aqua-400"
               >
                 All solutions in detail <ArrowIcon className="h-4 w-4" />
               </Link>
@@ -230,13 +230,13 @@ export default function HomePage() {
                 <Reveal
                   key={solution.id}
                   delay={index * 70}
-                  className="card-lift group relative h-full overflow-hidden border border-line bg-white/[0.02] p-8 hover:border-leaf-500/35 hover:bg-white/[0.04] sm:p-10"
+                  className="card-lift group relative h-full overflow-hidden border border-line bg-white/[0.02] p-8 hover:border-aqua-500/35 hover:bg-white/[0.04] sm:p-10"
                 >
                   <div
                     aria-hidden="true"
-                    className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-leaf-500/10 opacity-0 blur-2xl transition duration-500 group-hover:opacity-100"
+                    className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-aqua-500/10 opacity-0 blur-2xl transition duration-500 group-hover:opacity-100"
                   />
-                  <span className="icon-pop grid h-12 w-12 place-items-center rounded-sm bg-leaf-500/10 text-leaf-400 ring-1 ring-leaf-500/25">
+                  <span className="icon-pop grid h-12 w-12 place-items-center rounded-sm bg-aqua-500/10 text-aqua-400 ring-1 ring-aqua-500/25">
                     <Icon className="h-6 w-6" />
                   </span>
                   <h3 className="mt-6 font-display text-xl font-semibold tracking-tight text-chalk">
@@ -249,7 +249,7 @@ export default function HomePage() {
                     {solution.detail}
                   </p>
                   <p className="mt-6 border-t border-line pt-5 text-sm text-chalk">
-                    <span className="text-leaf-400">In practice — </span>
+                    <span className="text-aqua-400">In practice — </span>
                     {solution.benefit}
                   </p>
                 </Reveal>
@@ -272,7 +272,7 @@ export default function HomePage() {
             aside={
               <Link
                 href="/technology"
-                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-leaf-400"
+                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-aqua-400"
               >
                 How the technology works <ArrowIcon className="h-4 w-4" />
               </Link>
@@ -306,7 +306,7 @@ export default function HomePage() {
       {/* Why GanSystems */}
       <section
         id="why-gansystems"
-        className="border-y border-line bg-ink-900/50 py-20 sm:py-28"
+        className="border-y border-line bg-ocean-900/50 py-20 sm:py-28"
       >
         <Container>
           <SectionHeading
@@ -330,7 +330,7 @@ export default function HomePage() {
                   key={award.programme}
                   className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-fog"
                 >
-                  <span className="border border-leaf-500/40 bg-leaf-500/10 px-2.5 py-1 text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-leaf-400">
+                  <span className="border border-aqua-500/40 bg-aqua-500/10 px-2.5 py-1 text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-aqua-400">
                     {award.placement}
                   </span>
                   <span className="text-chalk">{award.programme}</span>
@@ -347,7 +347,7 @@ export default function HomePage() {
               href={company.prototypeUrl}
               target="_blank"
               rel="noreferrer"
-              className="text-sm text-chalk underline decoration-leaf-500/50 underline-offset-4 transition hover:text-leaf-400"
+              className="text-sm text-chalk underline decoration-aqua-500/50 underline-offset-4 transition hover:text-aqua-400"
             >
               Open the live prototype ↗
             </a>
@@ -358,7 +358,7 @@ export default function HomePage() {
       {/* Founders */}
       <section
         id="founders"
-        className="border-y border-line bg-ink-900/50 py-20 sm:py-28"
+        className="border-y border-line bg-ocean-900/50 py-20 sm:py-28"
       >
         <Container>
           <SectionHeading
@@ -368,7 +368,7 @@ export default function HomePage() {
             aside={
               <Link
                 href="/team"
-                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-leaf-400"
+                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-aqua-400"
               >
                 View full team <ArrowIcon className="h-4 w-4" />
               </Link>
@@ -387,11 +387,10 @@ export default function HomePage() {
         <Container>
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-display text-[2rem] leading-[1.06] font-semibold tracking-[-0.025em] text-chalk sm:text-[3.25rem]">
-              See GanSystems running on a pond
+              See what GanSystems can do for your farm
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-[1rem] leading-[1.75] text-fog sm:text-[1.075rem]">
-              Walk through the dashboard, the controllers, and the automation
-              with the founders, or open the prototype and look around first.
+              Explore the platform, connected hardware, and monitoring technology behind our smart-aquaculture system.
             </p>
             <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
               <CtaLink href="/contact">
@@ -406,7 +405,7 @@ export default function HomePage() {
               Or email the founders directly at{" "}
               <a
                 href={`mailto:${company.email}`}
-                className="text-chalk underline decoration-leaf-500/50 underline-offset-4 transition hover:text-leaf-400"
+                className="text-chalk underline decoration-aqua-500/50 underline-offset-4 transition hover:text-aqua-400"
               >
                 {company.email}
               </a>

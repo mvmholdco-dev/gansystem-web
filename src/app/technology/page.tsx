@@ -36,9 +36,9 @@ export default function TechnologyPage() {
                   as="li"
                   key={layer.title}
                   delay={index * 70}
-                  className="group bg-ink-950 p-7 transition-colors duration-300 hover:bg-ink-900/70 sm:p-9"
+                  className="group bg-ocean-950 p-7 transition-colors duration-300 hover:bg-ocean-900/70 sm:p-9"
                 >
-                  <span className="font-mono text-xs text-fog transition-colors duration-200 group-hover:text-leaf-400">
+                  <span className="font-mono text-xs text-fog transition-colors duration-200 group-hover:text-aqua-400">
                     {layer.index}
                   </span>
                   <h2 className="mt-3 font-display text-[1.0625rem] font-semibold tracking-tight text-chalk">
@@ -59,7 +59,7 @@ export default function TechnologyPage() {
  
       <section
         id="how-it-works"
-        className="border-y border-line bg-ink-900/50 py-20 sm:py-28"
+        className="border-y border-line bg-ocean-900/50 py-20 sm:py-28"
       >
         <Container>
           <SectionHeading

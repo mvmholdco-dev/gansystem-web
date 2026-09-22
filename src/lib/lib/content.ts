@@ -21,6 +21,7 @@ export const recognition = {
   placement: "Top 30",
   pool: "Selected from 400+ applicants",
   founderCount: "3 co-founders",
+  description: "Recognized by the Startup Abuja Innovation Challenge 2026",
 };
  
 export type Award = {

@@ -37,7 +37,7 @@ export function SiteHeader() {
       <div
         className={`transition-all duration-300 ${
           scrolled || open
-            ? "border-b border-line bg-ink-950/92 shadow-[0_18px_40px_-34px_rgba(0,0,0,1)] backdrop-blur-xl"
+            ? "border-b border-line bg-ocean-950/92 shadow-[0_18px_40px_-34px_rgba(7,28,36,0.95)] backdrop-blur-xl"
             : "border-b border-transparent bg-transparent"
         }`}
       >
@@ -67,7 +67,7 @@ export function SiteHeader() {
                       {active ? (
                         <span
                           aria-hidden="true"
-                          className="absolute inset-x-3.5 -bottom-px h-px bg-leaf-500"
+                          className="absolute inset-x-3.5 -bottom-px h-px bg-aqua-500"
                         />
                       ) : null}
                     </Link>
@@ -80,7 +80,7 @@ export function SiteHeader() {
           <div className="hidden items-center gap-3 lg:flex">
             <Link
               href="/contact"
-              className="group inline-flex min-h-10 items-center gap-2 rounded-sm bg-leaf-500 px-4 text-sm font-medium text-ink-950 shadow-[0_14px_30px_-20px_rgba(22,214,107,0.9)] transition duration-200 hover:bg-leaf-400"
+              className="group inline-flex min-h-10 items-center gap-2 rounded-sm bg-aqua-500 px-4 text-sm font-medium text-ocean-950 shadow-[0_14px_30px_-20px_rgba(22,214,107,0.9)] transition duration-200 hover:bg-aqua-400"
             >
               Request a Demo
               <svg
@@ -130,14 +130,14 @@ export function SiteHeader() {
           <nav
             id="mobile-nav"
             aria-label="Mobile"
-            className="menu-in border-t border-line bg-ink-950/95 px-5 pb-6 pt-2 backdrop-blur-xl lg:hidden"
+            className="menu-in border-t border-line bg-ocean-950/95 px-5 pb-6 pt-2 backdrop-blur-xl lg:hidden"
           >
             <ul className="flex flex-col">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="block border-b border-line/70 py-3.5 text-base text-chalk transition-colors hover:text-leaf-400"
+                    className="block border-b border-line/70 py-3.5 text-base text-chalk transition-colors hover:text-aqua-400"
                   >
                     {link.label}
                   </Link>
@@ -146,7 +146,7 @@ export function SiteHeader() {
             </ul>
             <Link
               href="/contact"
-              className="mt-6 block rounded-sm bg-leaf-500 px-4 py-3.5 text-center text-sm font-medium text-ink-950"
+              className="mt-6 block rounded-sm bg-aqua-500 px-4 py-3.5 text-center text-sm font-medium text-ocean-950"
             >
               Request a Demo
             </Link>
