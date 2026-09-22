@@ -17,11 +17,11 @@ export const navLinks = [
 ];
  
 export const recognition = {
-  programme: "Startup Abuja Innovation Challenge 2026",
-  placement: "Top 30",
+  programme: "Nigerian Engineering Olympiad 2026",
+  placement: "Top 5 in North Central",
   pool: "Selected from 400+ applicants",
   founderCount: "3 co-founders",
-  description: "Recognized by the Startup Abuja Innovation Challenge 2026",
+  description: "Recognized by the NEO Innovation Challenge 2026",
 };
  
 export type Award = {
