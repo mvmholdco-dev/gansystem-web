@@ -1,42 +1,21 @@
+import Image from "next/image";
 import Link from "next/link";
  
 export function Logo({ compact = false }: { compact?: boolean }) {
   return (
     <Link
       href="/"
-      className="group inline-flex items-center gap-3"
-      aria-label="Gansystem Limited — home"
+      className="group inline-flex items-center"
+      aria-label="Gansystems Limited — home"
     >
-      <span className="relative grid h-9 w-9 place-items-center rounded-md bg-gradient-to-br from-aqua-500/25 to-ocean-900/20 ring-1 ring-aqua-500/30">
-        <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
-          <path
-            d="M3 16c2.2 0 2.2-2 4.4-2s2.2 2 4.4 2 2.2-2 4.4-2 2.2 2 4.4 2"
-            fill="none"
-            stroke="currentColor"
-            className="text-ocean-900"
-            strokeWidth="1.6"
-            strokeLinecap="round"
-          />
-          <path
-            d="M12 3.5c2.7 2 4.1 4 4.1 6a4.1 4.1 0 1 1-8.2 0c0-2 1.4-4 4.1-6Z"
-            fill="none"
-            stroke="currentColor"
-            className="text-aqua-300"
-            strokeWidth="1.6"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </span>
-      <span className="leading-tight">
-        <span className="block font-display text-[0.95rem] font-semibold tracking-tight text-chalk">
-          GanSystems
-        </span>
-        {!compact && (
-          <span className="block text-[0.62rem] uppercase tracking-[0.22em] text-fog">
-            Gansystem Limited
-          </span>
-        )}
-      </span>
+      <Image
+        src="/screenshots/gan_sys_logo-removebg-preview.png"
+        alt="GanSystems Limited"
+        width={compact ? 56 : 72}
+        height={compact ? 56 : 72}
+        className="object-contain"
+        priority
+      />
     </Link>
   );
 }

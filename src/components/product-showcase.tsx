@@ -27,7 +27,7 @@ export function BrowserFrame({
         <span className="h-2.5 w-2.5 rounded-full bg-white/12" />
         <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
         <span className="ml-3 hidden truncate rounded-sm bg-white/[0.04] px-3 py-1 font-mono text-[0.65rem] text-fog sm:block">
-          gansystem.app
+          gansystems.app
         </span>
       </div>
       <div
