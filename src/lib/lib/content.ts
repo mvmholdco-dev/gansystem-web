@@ -109,7 +109,8 @@ export const team: TeamMember[] = [
     role: "Chief Marketing Officer",
     shortRole: "CMO",
     responsibility: "Marketing, brand, and communications.",
-    photo: "",
+    photo: "/screenshots/simi-nyam.jpeg",
+    linkedin: "https://www.linkedin.com/in/simi-nyam-93929b439/",
     coFounder: false,
   },
 ];
