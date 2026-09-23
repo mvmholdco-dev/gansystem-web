@@ -284,7 +284,7 @@ export default function HomePage() {
       {/* Connected system */}
       <section
         id="connected-system"
-        className="relative overflow-hidden border-t border-line bg-gradient-to-b from-white to-ocean-950 py-20 sm:py-28"
+        className="relative overflow-hidden border-t border-line bg-gradient-to-b from-white to-ocean-900/50 py-20 sm:py-28"
       >
         <div aria-hidden="true" className="field-wash absolute inset-0 -z-10" />
         <Container>
