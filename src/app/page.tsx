@@ -183,6 +183,7 @@ export default function HomePage() {
             eyebrow="Inside the product"
             title="The platform, screen by screen"
             lead="Dashboard, telemetry, controllers, and system architecture, captured from the working GanSystems prototype."
+            darkText
             aside={
               <a
                 href={company.prototypeUrl}
@@ -207,6 +208,7 @@ export default function HomePage() {
             eyebrow="Capabilities"
             title="What the platform does"
             lead="Four capabilities that make up GanSystems, and what each one relies on."
+            darkText
             aside={
               <Link
                 href="/what-we-do"
@@ -263,6 +265,7 @@ export default function HomePage() {
             eyebrow="How it works"
             title="From a single reading to a corrective action"
             lead="Five stages take pond conditions from a sensor in the water to an action back at the pond."
+            darkText
             aside={
               <Link
                 href="/technology"
@@ -290,6 +293,7 @@ export default function HomePage() {
             title="One connected system for the modern fish farm."
             lead="Equipment in the water, the data it sends, the platform that reads it, and the action that follows."
             align="center"
+            darkText
           />
           <div className="mt-12">
             <ConnectedSystem />
