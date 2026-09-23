@@ -6,7 +6,7 @@ import { DashboardPreview } from "@/components/dashboard-preview";
 import { HowItWorksTimeline } from "@/components/how-it-works-timeline";
 import { ConnectedSystem } from "@/components/connected-systems";
 import { PrincipleGrid } from "@/components/principle-grid";
-import { FoundersEditorial } from "@/components/founders-editorial";
+import { TeamEditorial } from "@/components/team-editorial";
 import { Reveal } from "@/components/reveal";
 import {
   AnalysisIcon,
@@ -355,9 +355,8 @@ export default function HomePage() {
       >
         <Container>
           <SectionHeading
-            eyebrow="Team"
-            title="The team behind GanSystems"
-            lead="GanSystems Limited is built by three co-founders and a marketing lead, covering business leadership, engineering and IoT infrastructure, operations, and marketing — with the hardware, the platform, and the field work owned in-house."
+            eyebrow="The team"
+            title="Three people building the infrastructure behind GanSystems"
             aside={
               <Link
                 href="/team"
@@ -369,7 +368,7 @@ export default function HomePage() {
           />
  
           <div className="mt-12">
-            <FoundersEditorial />
+            <TeamEditorial />
           </div>
         </Container>
       </section>
