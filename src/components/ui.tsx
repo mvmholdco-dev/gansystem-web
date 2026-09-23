@@ -43,7 +43,7 @@ export function SectionHeading({
   darkText?: boolean;
 }) {
   const heading = (
-    <h2 className={`mt-5 font-display text-[1.875rem] leading-[1.1] font-semibold tracking-[-0.02em] sm:text-[2.5rem] ${darkText ? 'text-sand-800' : 'text-chalk'}`}>
+    <h2 className={`mt-5 font-display text-[1.875rem] leading-[1.1] font-semibold tracking-[-0.02em] sm:text-[2.5rem] ${darkText ? 'text-sand-950' : 'text-chalk'}`}>
       {title}
     </h2>
   );
@@ -57,7 +57,7 @@ export function SectionHeading({
         </div>
         <div className="lg:pb-1">
           {lead ? (
-            <p className={`text-[0.975rem] leading-[1.75] sm:text-[1.0625rem] ${darkText ? 'text-sand-700' : 'text-fog'}`}>
+            <p className={`text-[0.975rem] leading-[1.75] sm:text-[1.0625rem] ${darkText ? 'text-sand-800' : 'text-fog'}`}>
               {lead}
             </p>
           ) : null}
@@ -78,7 +78,7 @@ export function SectionHeading({
       {eyebrow ? <Eyebrow darkText={darkText}>{eyebrow}</Eyebrow> : null}
       {heading}
       {lead ? (
-        <p className={`mt-5 text-[0.975rem] leading-[1.75] sm:text-[1.0625rem] ${darkText ? 'text-sand-700' : 'text-fog'}`}>
+        <p className={`mt-5 text-[0.975rem] leading-[1.75] sm:text-[1.0625rem] ${darkText ? 'text-sand-800' : 'text-fog'}`}>
           {lead}
         </p>
       ) : null}
