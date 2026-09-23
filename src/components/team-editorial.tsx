@@ -3,12 +3,12 @@ import { Reveal } from "@/components/reveal";
 
 export function TeamEditorial() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-4">
       <Reveal>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {team.map((member, index) => (
             <div key={member.name} className="text-center">
-              <div className="mb-3 inline-block h-16 w-16 overflow-hidden rounded-full border-2 border-line bg-ocean-800">
+              <div className="mb-3 inline-block h-24 w-24 overflow-hidden rounded-full border-2 border-line bg-ocean-800">
                 {member.photo ? (
                   <img
                     src={member.photo}

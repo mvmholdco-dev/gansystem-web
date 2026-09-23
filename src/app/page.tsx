@@ -351,7 +351,7 @@ export default function HomePage() {
       {/* Founders */}
       <section
         id="founders"
-        className="border-y border-line bg-ocean-900/50 py-20 sm:py-28"
+        className="border-y border-line bg-ocean-900/50 py-12 sm:py-16"
       >
         <Container>
           <SectionHeading
