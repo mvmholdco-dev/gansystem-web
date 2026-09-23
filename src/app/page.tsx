@@ -102,7 +102,7 @@ export default function HomePage() {
       </section>
  
       {/* Platform specification strip */}
-      <section className="border-y border-line bg-ocean-900/60">
+      <section className="border-y border-line bg-gradient-to-b from-ocean-950 to-ocean-900/60">
         <Container>
           <dl className="grid divide-y divide-line sm:grid-cols-2 sm:divide-x-0 lg:grid-cols-4 lg:divide-x lg:divide-y-0">
             {platformSpecs.map((spec, index) => (
@@ -127,7 +127,7 @@ export default function HomePage() {
       </section>
  
       {/* Problem */}
-      <section className="bg-sand-50 py-20 sm:py-28">
+      <section className="bg-gradient-to-b from-ocean-900/60 to-sand-50 py-20 sm:py-28">
         <Container>
           <SectionHeading
             eyebrow="The problem"
@@ -141,6 +141,7 @@ export default function HomePage() {
                 See how the platform responds <ArrowIcon className="h-4 w-4" />
               </Link>
             }
+            darkText
           />
  
           <div className="mt-12 grid gap-px overflow-hidden border border-sand-200 bg-sand-200 sm:grid-cols-2">
@@ -175,7 +176,7 @@ export default function HomePage() {
       {/* Product showcase */}
       <section
         id="product"
-        className="border-y border-sand-200 bg-sand-50 py-20 sm:py-28"
+        className="border-y border-sand-200 bg-gradient-to-b from-sand-50 to-sand-100 py-20 sm:py-28"
       >
         <Container>
           <SectionHeading
@@ -200,7 +201,7 @@ export default function HomePage() {
       </section>
  
       {/* Core solutions */}
-      <section id="solutions" className="bg-sand-50 py-20 sm:py-28">
+      <section id="solutions" className="bg-gradient-to-b from-sand-100 to-sand-50 py-20 sm:py-28">
         <Container>
           <SectionHeading
             eyebrow="Capabilities"
@@ -255,7 +256,7 @@ export default function HomePage() {
       {/* How it works */}
       <section
         id="how-it-works"
-        className="border-t border-sand-200 bg-white py-20 sm:py-28"
+        className="border-t border-sand-200 bg-gradient-to-b from-sand-50 to-white py-20 sm:py-28"
       >
         <Container>
           <SectionHeading
@@ -280,7 +281,7 @@ export default function HomePage() {
       {/* Connected system */}
       <section
         id="connected-system"
-        className="relative overflow-hidden border-t border-line py-20 sm:py-28"
+        className="relative overflow-hidden border-t border-line bg-gradient-to-b from-white to-ocean-950 py-20 sm:py-28"
       >
         <div aria-hidden="true" className="field-wash absolute inset-0 -z-10" />
         <Container>
