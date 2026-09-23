@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Container, CtaLink, SectionHeading } from "@/components/ui";
 import { SignalRail } from "@/components/hero-system";
 import { BrowserFrame, ProductShowcase } from "@/components/product-showcase";
+import { DashboardPreview } from "@/components/dashboard-preview";
 import { HowItWorksTimeline } from "@/components/how-it-works-timeline";
 import { ConnectedSystem } from "@/components/connected-systems";
 import { PrincipleGrid } from "@/components/principle-grid";
@@ -50,15 +51,14 @@ export default function HomePage() {
                 IoT aquaculture platform
               </p>
               <h1 className="mt-6 text-balance font-display text-[2.1rem] leading-[1.06] font-semibold tracking-[-0.02em] text-chalk sm:text-[2.75rem] xl:text-[2.95rem]">
-                Water-quality monitoring and{" "}
-                <span className="text-aqua-300">automated water control</span>{" "}
-                for fish farms
+                FROM WATER DATA
+                <br />
+                <span className="text-aqua-300">TO SMARTER ACTION.</span>
               </h1>
               <p className="mt-6 max-w-xl text-[1rem] leading-[1.75] text-fog sm:text-[1.075rem]">
-                Sensors in the pond report water conditions continuously, the
-                dashboard shows them as they arrive, and connected field
-                controllers can drain or refill when conditions call for it —
-                without waiting for someone to check the water by hand.
+                Monitor your farm's water conditions in real time,
+                understand what is happening, and respond faster
+                with connected aquaculture technology.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <CtaLink href="/contact">
@@ -66,7 +66,7 @@ export default function HomePage() {
                   <ArrowIcon className="h-4 w-4" />
                 </CtaLink>
                 <CtaLink href={company.prototypeUrl} variant="secondary">
-                  Open the live prototype ↗
+                  Explore the Platform
                 </CtaLink>
               </div>
               <div className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-line pt-6 text-sm text-fog">
@@ -87,16 +87,9 @@ export default function HomePage() {
  
             <Reveal variant="scale" as="figure">
               <>
-                <BrowserFrame
-                  src={productShots[0].src}
-                  alt="GanSystems dashboard showing the Control Hub overview with controller, alert, and water-average tiles"
-                  width={productShots[0].width}
-                  height={productShots[0].height}
-                  priority
-                />
+                <DashboardPreview />
                 <figcaption className="mt-3 text-[0.75rem] text-fog">
-                  GanSystems dashboard — Control Hub overview, shown in a demo
-                  account.
+                  GanSystems dashboard — real-time sensor data and automated control.
                 </figcaption>
               </>
             </Reveal>
