@@ -127,7 +127,7 @@ export default function HomePage() {
       </section>
  
       {/* Problem */}
-      <section className="py-20 sm:py-28">
+      <section className="bg-sand-50 py-20 sm:py-28">
         <Container>
           <SectionHeading
             eyebrow="The problem"
@@ -136,31 +136,31 @@ export default function HomePage() {
             aside={
               <Link
                 href="#how-it-works"
-                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-aqua-300"
+                className="inline-flex items-center gap-2 text-sm text-sand-900 transition hover:text-aqua-600"
               >
                 See how the platform responds <ArrowIcon className="h-4 w-4" />
               </Link>
             }
           />
  
-          <div className="mt-12 grid gap-px overflow-hidden border border-line bg-line sm:grid-cols-2">
+          <div className="mt-12 grid gap-px overflow-hidden border border-sand-200 bg-sand-200 sm:grid-cols-2">
             {problems.map((problem, index) => {
               const Icon = problemIcons[index];
               return (
                 <Reveal
                   key={problem.title}
                   delay={index * 70}
-                  className="group bg-ocean-950 p-7 transition-colors duration-300 hover:bg-ocean-900/70 sm:p-9"
+                  className="group bg-white p-7 transition-colors duration-300 hover:bg-sand-50 sm:p-9"
                 >
                   <div className="flex items-start gap-4">
-                    <span className="icon-pop mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-sm bg-white/[0.04] text-fog ring-1 ring-line">
+                    <span className="icon-pop mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-sm bg-aqua-400/10 text-aqua-600 ring-1 ring-aqua-500/25">
                       <Icon className="h-5 w-5" />
                     </span>
                     <div>
-                      <h3 className="font-display text-[1.0625rem] font-semibold tracking-tight text-chalk">
+                      <h3 className="font-display text-[1.0625rem] font-semibold tracking-tight text-sand-900">
                         {problem.title}
                       </h3>
-                      <p className="mt-2 text-sm leading-relaxed text-fog">
+                      <p className="mt-2 text-sm leading-relaxed text-sand-600">
                         {problem.body}
                       </p>
                     </div>
@@ -175,7 +175,7 @@ export default function HomePage() {
       {/* Product showcase */}
       <section
         id="product"
-        className="border-y border-line bg-ocean-900/50 py-20 sm:py-28"
+        className="border-y border-sand-200 bg-sand-50 py-20 sm:py-28"
       >
         <Container>
           <SectionHeading
@@ -187,7 +187,7 @@ export default function HomePage() {
                 href={company.prototypeUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-aqua-300"
+                className="inline-flex items-center gap-2 text-sm text-sand-900 transition hover:text-aqua-600"
               >
                 Open the live prototype ↗
               </a>
@@ -200,7 +200,7 @@ export default function HomePage() {
       </section>
  
       {/* Core solutions */}
-      <section id="solutions" className="py-20 sm:py-28">
+      <section id="solutions" className="bg-sand-50 py-20 sm:py-28">
         <Container>
           <SectionHeading
             eyebrow="Capabilities"
@@ -209,7 +209,7 @@ export default function HomePage() {
             aside={
               <Link
                 href="/what-we-do"
-                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-aqua-300"
+                className="inline-flex items-center gap-2 text-sm text-sand-900 transition hover:text-aqua-600"
               >
                 All solutions in detail <ArrowIcon className="h-4 w-4" />
               </Link>
@@ -223,26 +223,26 @@ export default function HomePage() {
                 <Reveal
                   key={solution.id}
                   delay={index * 70}
-                  className="card-lift group relative h-full overflow-hidden border border-line bg-white/[0.02] p-8 hover:border-aqua-300/35 hover:bg-white/[0.04] sm:p-10"
+                  className="card-lift group relative h-full overflow-hidden border border-sand-200 bg-white p-8 hover:border-aqua-400/50 hover:bg-sand-50 sm:p-10"
                 >
                   <div
                     aria-hidden="true"
                     className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-aqua-400/10 opacity-0 blur-2xl transition duration-500 group-hover:opacity-100"
                   />
-                  <span className="icon-pop grid h-12 w-12 place-items-center rounded-sm bg-aqua-400/10 text-aqua-300 ring-1 ring-aqua-500/25">
+                  <span className="icon-pop grid h-12 w-12 place-items-center rounded-sm bg-aqua-400/10 text-aqua-600 ring-1 ring-aqua-500/25">
                     <Icon className="h-6 w-6" />
                   </span>
-                  <h3 className="mt-6 font-display text-xl font-semibold tracking-tight text-chalk">
+                  <h3 className="mt-6 font-display text-xl font-semibold tracking-tight text-sand-900">
                     {solution.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-fog sm:text-base">
+                  <p className="mt-3 text-sm leading-relaxed text-sand-600 sm:text-base">
                     {solution.summary}
                   </p>
-                  <p className="mt-5 text-sm leading-relaxed text-fog">
+                  <p className="mt-5 text-sm leading-relaxed text-sand-600">
                     {solution.detail}
                   </p>
-                  <p className="mt-6 border-t border-line pt-5 text-sm text-chalk">
-                    <span className="text-aqua-300">In practice — </span>
+                  <p className="mt-6 border-t border-sand-200 pt-5 text-sm text-sand-900">
+                    <span className="text-aqua-600">In practice — </span>
                     {solution.benefit}
                   </p>
                 </Reveal>
@@ -255,7 +255,7 @@ export default function HomePage() {
       {/* How it works */}
       <section
         id="how-it-works"
-        className="border-t border-line py-20 sm:py-28"
+        className="border-t border-sand-200 bg-white py-20 sm:py-28"
       >
         <Container>
           <SectionHeading
@@ -265,7 +265,7 @@ export default function HomePage() {
             aside={
               <Link
                 href="/technology"
-                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-aqua-300"
+                className="inline-flex items-center gap-2 text-sm text-sand-900 transition hover:text-aqua-600"
               >
                 How the technology works <ArrowIcon className="h-4 w-4" />
               </Link>
@@ -351,7 +351,7 @@ export default function HomePage() {
       {/* Founders */}
       <section
         id="founders"
-        className="border-y border-line bg-ocean-900/50 py-12 sm:py-16"
+        className="border-y border-sand-200 bg-sand-50 py-12 sm:py-16"
       >
         <Container>
           <SectionHeading
@@ -360,7 +360,7 @@ export default function HomePage() {
             aside={
               <Link
                 href="/team"
-                className="inline-flex items-center gap-2 text-sm text-chalk transition hover:text-aqua-300"
+                className="inline-flex items-center gap-2 text-sm text-sand-900 transition hover:text-aqua-600"
               >
                 View full team <ArrowIcon className="h-4 w-4" />
               </Link>

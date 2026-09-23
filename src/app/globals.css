@@ -18,6 +18,19 @@
   --color-amber-500: #F2A93B;
   --color-amber-600: #E09228;
 
+  /* Light theme colors for alternating sections */
+  --color-sand-50: #FAF9F6;
+  --color-sand-100: #F5F3EE;
+  --color-sand-200: #EBE8E0;
+  --color-sand-300: #D9D4C8;
+  --color-sand-400: #C4BDB0;
+  --color-sand-500: #A8A094;
+  --color-sand-600: #8C8478;
+  --color-sand-700: #6B655C;
+  --color-sand-800: #4F4A44;
+  --color-sand-900: #3A3632;
+  --color-sand-950: #1F1D1B;
+
   /* Old color names mapped to new values for backward compatibility */
   --color-ink-950: #071C24;
   --color-ink-900: #0B4F58;

@@ -79,14 +79,14 @@ export function ProductShowcase() {
   };
  
   return (
-    <div className="overflow-hidden border border-line bg-ocean-900/40">
+    <div className="overflow-hidden border border-sand-200 bg-white">
       <div className="grid lg:grid-cols-[19rem_minmax(0,1fr)]">
         <div
           role="tablist"
           aria-label="GanSystems product screens"
           aria-orientation="vertical"
           onKeyDown={onKeyDown}
-          className="grid grid-cols-2 border-b border-line sm:grid-cols-4 lg:block lg:border-b-0 lg:border-r"
+          className="grid grid-cols-2 border-b border-sand-200 sm:grid-cols-4 lg:block lg:border-b-0 lg:border-r"
         >
           {productShots.map((shot, index) => {
             const selected = index === active;
@@ -103,10 +103,10 @@ export function ProductShowcase() {
                 aria-controls="product-panel"
                 tabIndex={selected ? 0 : -1}
                 onClick={() => setActive(index)}
-                className={`group relative flex w-full items-start gap-3 border-line px-5 py-5 text-left transition-colors duration-200 [&:not(:last-child)]:border-b [&:not(:last-child)]:border-r sm:[&:not(:last-child)]:border-b-0 lg:border-b lg:border-r-0 ${
+                className={`group relative flex w-full items-start gap-3 border-sand-200 px-5 py-5 text-left transition-colors duration-200 [&:not(:last-child)]:border-b [&:not(:last-child)]:border-r sm:[&:not(:last-child)]:border-b-0 lg:border-b lg:border-r-0 ${
                   selected
-                    ? "bg-white/[0.05]"
-                    : "hover:bg-white/[0.025]"
+                    ? "bg-sand-50"
+                    : "hover:bg-sand-50/50"
                 }`}
               >
                 <span
@@ -120,7 +120,7 @@ export function ProductShowcase() {
                 <span
                   aria-hidden="true"
                   className={`mt-0.5 font-mono text-[0.7rem] transition-colors ${
-                    selected ? "text-aqua-300" : "text-fog/70"
+                    selected ? "text-aqua-600" : "text-sand-500"
                   }`}
                 >
                   0{index + 1}
@@ -128,12 +128,12 @@ export function ProductShowcase() {
                 <span className="min-w-0">
                   <span
                     className={`block font-display text-[0.95rem] font-semibold transition-colors ${
-                      selected ? "text-chalk" : "text-fog group-hover:text-chalk"
+                      selected ? "text-sand-900" : "text-sand-600 group-hover:text-sand-900"
                     }`}
                   >
                     {shot.label}
                   </span>
-                  <span className="mt-1 hidden text-xs leading-relaxed text-fog lg:block">
+                  <span className="mt-1 hidden text-xs leading-relaxed text-sand-500 lg:block">
                     {shot.kicker}
                   </span>
                 </span>
@@ -141,13 +141,13 @@ export function ProductShowcase() {
             );
           })}
  
-          <div className="hidden px-5 py-6 text-xs leading-relaxed text-fog lg:block">
+          <div className="hidden px-5 py-6 text-xs leading-relaxed text-sand-500 lg:block">
             Screens are captured from the working prototype at{" "}
             <a
               href={company.prototypeUrl}
               target="_blank"
               rel="noreferrer"
-              className="text-chalk underline decoration-aqua-500/50 underline-offset-4 transition hover:text-aqua-300"
+              className="text-sand-900 underline decoration-aqua-500/50 underline-offset-4 transition hover:text-aqua-600"
             >
               gansystem.vercel.app
             </a>
@@ -178,27 +178,27 @@ export function ProductShowcase() {
               style={{ animationDelay: "90ms" }}
             >
               <div>
-                <p className="text-[0.62rem] uppercase tracking-[0.2em] text-fog">
+                <p className="text-[0.62rem] uppercase tracking-[0.2em] text-sand-500">
                   {current.kicker}
                 </p>
-                <h3 className="mt-2 font-display text-xl font-semibold tracking-tight text-chalk sm:text-2xl">
+                <h3 className="mt-2 font-display text-xl font-semibold tracking-tight text-sand-900 sm:text-2xl">
                   {current.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-fog sm:text-base">
+                <p className="mt-3 text-sm leading-relaxed text-sand-600 sm:text-base">
                   {current.caption}
                 </p>
               </div>
  
-              <div className="border-t border-line pt-5 md:border-l md:border-t-0 md:pl-8 md:pt-0">
-                <p className="text-[0.62rem] uppercase tracking-[0.2em] text-fog">
+              <div className="border-t border-sand-200 pt-5 md:border-l md:border-t-0 md:pl-8 md:pt-0">
+                <p className="text-[0.62rem] uppercase tracking-[0.2em] text-sand-500">
                   What this screen shows
                 </p>
                 <ul className="mt-3 space-y-2.5">
                   {current.highlights.map((highlight) => (
-                    <li key={highlight} className="flex gap-3 text-sm leading-relaxed text-fog">
+                    <li key={highlight} className="flex gap-3 text-sm leading-relaxed text-sand-600">
                       <span
                         aria-hidden="true"
-                        className="mt-[0.45rem] h-1.5 w-1.5 shrink-0 bg-aqua-400"
+                        className="mt-[0.45rem] h-1.5 w-1.5 shrink-0 bg-aqua-500"
                       />
                       {highlight}
                     </li>
