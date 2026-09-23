@@ -362,6 +362,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="The team"
             title="Three people building the infrastructure behind GanSystems"
+            darkText
             aside={
               <Link
                 href="/team"

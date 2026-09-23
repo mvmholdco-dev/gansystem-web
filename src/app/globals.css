@@ -66,6 +66,11 @@ html {
  
 body {
   background-color: var(--color-ocean-950);
+  background-image:
+    radial-gradient(62rem 32rem at 12% -12%, rgba(77, 216, 200, 0.12), transparent 62%),
+    radial-gradient(52rem 28rem at 96% 6%, rgba(11, 79, 88, 0.18), transparent 64%),
+    linear-gradient(180deg, var(--color-ocean-950) 0%, var(--color-ocean-900) 48%, var(--color-ocean-950) 100%);
+  background-attachment: fixed;
   color: var(--color-chalk);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
