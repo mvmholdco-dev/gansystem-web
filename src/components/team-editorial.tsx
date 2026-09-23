@@ -8,12 +8,12 @@ export function TeamEditorial() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {team.map((member, index) => (
             <div key={member.name} className="text-center">
-              <div className="mb-3 inline-block h-24 w-24 overflow-hidden rounded-full border-2 border-line bg-ocean-800">
+              <div className="mb-3 inline-block h-32 w-32 overflow-hidden rounded-full border-2 border-line bg-ocean-800 transition-transform duration-300 hover:scale-110 hover:border-aqua-300/50">
                 {member.photo ? (
                   <img
                     src={member.photo}
                     alt={member.name}
-                    className="h-full w-full object-cover object-[50%_18%] grayscale-[35%]"
+                    className="h-full w-full object-cover object-[50%_18%] grayscale-[35%] transition-all duration-300 hover:grayscale-0"
                   />
                 ) : (
                   <div className="flex h-full w-full items-center justify-center bg-ocean-900">
