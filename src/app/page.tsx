@@ -136,7 +136,7 @@ export default function HomePage() {
             aside={
               <Link
                 href="#how-it-works"
-                className="inline-flex items-center gap-2 text-sm text-sand-900 transition hover:text-aqua-600"
+                className="inline-flex items-center gap-2 text-sm text-sand-950 transition hover:text-aqua-600"
               >
                 See how the platform responds <ArrowIcon className="h-4 w-4" />
               </Link>
