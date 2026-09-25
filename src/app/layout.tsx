@@ -4,6 +4,7 @@ import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { company } from "@/lib/lib/content";
+import { SpeedInsights } from '@vercel/speed-insights/next';
  
 const inter = Inter({
   variable: "--font-inter",
@@ -56,6 +57,7 @@ export default function RootLayout({
           </main>
           <SiteFooter />
         </div>
+        <SpeedInsights />
       </body>
     </html>
   );
